@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Fredericka the Great";
+  src: url("./fonts/FredrerickatheGreat/FrederickatheGreat-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("./fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* Variable collection */
+:root {
+  /* Desktop */
+  /* color */
+  --accent-color: #4a81b9;
+  --background-color: #fdf8ea;
+  --black: #0a122a;
+  --brand-color: #feebdb;
+  --gray-10: #aaaeb0;
+  --gray-20: #dfe5ec;
+  --light-color: #a9b9c8;
+  --subtle-color: #ededf6;
+  --text-color: #030f59;
+  --title-color: #223f70;
+  --white: #fdf8ea;
+  /* number */
+  --border-border-width-s: 1px;
+  --border-border-width-l: 4px;
+  --border-border-width-xl: 8px;
+  --font-utility-xs: 12px;
+  --font-utility-s: 16px;
+  --font-utility-m: 18px;
+  --font-utility-l: 28px;
+  --font-display-m: 32px;
+  --font-display-l: 40px;
+  --font-display-xl: 60px;
+  --font-display-xxl: 96px;
+  --font-line-height-utility-xxs: 16px;
+  --font-line-height-utility-xs: 18px;
+  --font-line-height-utility-s: 21px;
+  --font-line-height-utility-m: 24px;
+  --font-line-height-utility-l: 27px;
+  --font-line-height-display-xs: 28px;
+  --font-line-height-display-s: 34px;
+  --font-line-height-display-l: 48px;
+  --font-line-height-display-xl: 60px;
+  --space-xxxs: 4px;
+  --space-xxs: 8px;
+  --space-xs: 12px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 48px;
+  --space-xxl: 64px;
+  --space-xxxl: 80px;
+  --space-4xl: 128px;
+  /* string */
+  --border-border-width-m: 2;
+  --family-font-family-header: "Fredericka the Great";
+  --family-font-family-text: "Lato";
+  --family-font-family-title: "Cormorant Garamond";
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--family-font-family-text), Arial;
+  font-weight: var(--font-weight-regular);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  padding: var(--space-xxxl) var(--space-xxl);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-l, 32px);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__link {
+  text-decoration: none;
+
+  color: var(--white);
+  font-family: var(--family-font-family-text);
+  font-size: var(--font-utility-s);
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+}
+.hero {
+  background: linear-gradient(
+    180deg,
+    var(--accent-color, #4a81b9) 0%,
+    var(--light-color, #a9b9c8) 84.62%,
+    var(--gray-10, #aaaeb0) 100%
+  );
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__title {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: var(--white);
+  font-family: var(--family-font-family-header);
+  font-size: var(--space-4xl);
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+}
+
+.hero__subtitle {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--family-font-family-text);
+  font-size: var(--font-display-m);
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+}
+
+.hero__img {
+  width: 100%;
+  position: absolute;
+  bottom: -250px;
+}
