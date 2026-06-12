@@ -450,6 +450,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 30vh;
+
+  transition-property: opacity, display;
+  transition-duration: 0.25s;
+  transition-behavior: allow-discrete;
 }
 
 .nav {
@@ -512,14 +516,19 @@ body {
   transform-origin: left;
 }
 
-.menu-btn:hover div:first-child {
-  transform: rotate(45deg);
-}
-
-.menu-btn:hover div:nth-child(2) {
+.hidden {
+  display: none;
   opacity: 0;
 }
 
-.menu-btn:hover div:last-child {
+.menu-btn--close div:first-child {
+  transform: rotate(45deg);
+}
+
+.menu-btn--close div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn--close div:last-child {
   transform: rotate(-45deg);
 }
