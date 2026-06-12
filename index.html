@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Andrea Garrido | Frontend Engineer</title>
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -35,14 +35,289 @@
           </li>
         </ul>
       </nav>
+
+      <div class="header__bar">
+        <button class="menu-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </div>
+      <!-- Mobile Nav -->
+      <div class="dropdown">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav__link" href="#about">ABOUT</a></li>
+            <li><a class="nav__link" href="#contact">CONTACT</a></li>
+          </ul>
+          <ul class="nav__list nav__list--contact">
+            <li>
+              <a
+                class="nav__link nav__link--contact"
+                href="https://github.com/ggandream"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GITHUB</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav__link nav__link--contact"
+                href="https://www.linkedin.com/in/garridoandreag/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LIN</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <section class="hero">
         <h1 class="hero__title">Andrea</h1>
-        <h2 class="hero__subtitle">Frontend Enginner</h2>
+        <h2 class="hero__subtitle">Frontend Engineer</h2>
         <img class="hero__img" src="./assets/clouds.webp" />
       </section>
+      <div class="content">
+        <section class="projects">
+          <h2 class="title">Projects</h2>
+          <!-- BLOGR LANDING PAGE -->
+          <article class="card">
+            <img
+              class="card__img"
+              src="./assets/blogr-landing-page.webp"
+              alt="Two iPhone phones showing blogr landing page project."
+            />
+            <div class="card__content">
+              <div class="card__header">
+                <h3 class="card__title">Blogr Landing Page</h3>
+                <div class="card__tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <p class="card__description">
+                Responsive landing page with dropdown menus and a hamburger menu
+                on mobile. The main challenge was to position sections with
+                curved backgrounds and overlapping intro elements without
+                breaking the layout at different breakpoints.
+              </p>
+              <div class="card__btn">
+                <a
+                  class="btn btn--primary"
+                  href="https://ggandream.github.io/blogr-landing-page/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit<img src="./assets/arrow-right.svg" />
+                </a>
+                <a
+                  class="btn btn--secondary"
+                  href="https://github.com/ggandream/blogr-landing-page/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code<img src="./assets/github.svg"
+                /></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CALCULATOR APP -->
+          <article class="card">
+            <img
+              class="card__img"
+              src="./assets/calculator-app.webp"
+              alt="Three iPhone phones showing the calculator app in its three different themes."
+            />
+            <div class="card__content">
+              <div class="card__header">
+                <h3 class="card__title">Calculator App</h3>
+                <div class="card__tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <p class="card__description">
+                A functional calculator with three interchangeable themes. I
+                implemented the arithmetic logic from scratch and the theme
+                switching using custom CSS properties, saving the user's
+                preferences.
+              </p>
+              <div class="card__btn">
+                <a
+                  class="btn btn--primary"
+                  href="https://ggandream.github.io/calculator-app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit<img src="./assets/arrow-right.svg" />
+                </a>
+                <a
+                  class="btn btn--secondary"
+                  href="https://github.com/ggandream/calculator-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code<img src="./assets/github.svg"
+                /></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT LIST WITH CARD -->
+          <article class="card">
+            <img
+              class="card__img"
+              src="./assets/product-cart-with-list.webp"
+              alt="Three iPhone phones showing the calculator app in its three different themes."
+            />
+            <div class="card__content">
+              <div class="card__header">
+                <h3 class="card__title">Product List with Cart</h3>
+                <div class="card__tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <p class="card__description">
+                Shopping cart with dynamic state: add/remove products, adjust
+                quantities, and confirmation modal. The focus was on managing
+                the cart's state and updating the UI in real time by reading
+                data from a JSON file
+              </p>
+              <div class="card__btn">
+                <a
+                  class="btn btn--primary"
+                  href="https://ggandream.github.io/product-list-with-cart-main/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit<img src="./assets/arrow-right.svg" />
+                </a>
+                <a
+                  class="btn btn--secondary"
+                  href="https://github.com/ggandream/product-list-with-cart-main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code<img src="./assets/github.svg"
+                /></a>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="about">
+          <h2 class="title__about">
+            The Mind Behind the <span class="title__about--accent">code.</span>
+          </h2>
+          <img src="./assets/profile-mobile.png" />
+          <h3 class="title">Andrea Garrido</h3>
+          <p class="text text--black">
+            Systems engineer dedicated to pursuing sustainable solutions by
+            applying modern industry best practices, always focused on achieving
+            strong results through efficient actions.
+          </p>
+        </section>
+        <section class="contact">
+          <h2 class="title__contact">
+            Let's Work <span class="title__contact--accent">Together</span>
+          </h2>
+          <div class="text">
+            <p class="text__p">
+              Got a project, a question, or just want to say hi?
+            </p>
+            <p class="text__p">I'm one click away</p>
+          </div>
+          <div class="card__btn">
+            <a class="btn btn--primary"
+              >LinkedIn
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_2003_126)">
+                  <path
+                    d="M8 11V16"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 8V8.01"
+                    stroke="currentColor"
+                    d
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 16V11"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 16V13C16 12.4696 15.7893 11.9609 15.4142 11.5858C15.0391 11.2107 14.5304 11 14 11C13.4696 11 12.9609 11.2107 12.5858 11.5858C12.2107 11.9609 12 12.4696 12 13"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 7C3 5.93913 3.42143 4.92172 4.17157 4.17157C4.92172 3.42143 5.93913 3 7 3H17C18.0609 3 19.0783 3.42143 19.8284 4.17157C20.5786 4.92172 21 5.93913 21 7V17C21 18.0609 20.5786 19.0783 19.8284 19.8284C19.0783 20.5786 18.0609 21 17 21H7C5.93913 21 4.92172 20.5786 4.17157 19.8284C3.42143 19.0783 3 18.0609 3 17V7Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2003_126">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs></svg
+            ></a>
+            <a class="btn btn--secondary"
+              >GitHub
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_2003_135)">
+                  <path
+                    d="M9 19.0004C4.7 20.4004 4.7 16.5004 3 16.0004M15 21.0004V17.5004C15 16.5004 15.1 16.1004 14.5 15.5004C17.3 15.2004 20 14.1004 20 9.50044C19.9988 8.3054 19.5325 7.15775 18.7 6.30044C19.0905 5.26241 19.0545 4.11207 18.6 3.10044C18.6 3.10044 17.5 2.80044 15.1 4.40044C13.0672 3.87103 10.9328 3.87103 8.9 4.40044C6.5 2.80044 5.4 3.10044 5.4 3.10044C4.94548 4.11207 4.90953 5.26241 5.3 6.30044C4.46745 7.15775 4.00122 8.3054 4 9.50044C4 14.1004 6.7 15.2004 9.5 15.5004C8.9 16.1004 8.9 16.7004 9 17.5004V21.0004"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2003_135">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs></svg
+            ></a>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__link-container">
+        <a href="#">Back to top</a
+        ><a href="#"
+          ><img class="footer__link-icon" src="./assets/arrow.svg"
+        /></a>
+      </div>
+      <span>&copy; 2026 ggandream</span>
+    </footer>
   </body>
 </html>
