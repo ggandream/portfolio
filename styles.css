@@ -103,6 +103,11 @@ body {
   min-height: 100dvh;
 }
 
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -320,6 +325,8 @@ body {
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: var(--font-line-height-utility-l);
+
+  text-decoration: none;
 }
 
 .btn--primary {
@@ -434,6 +441,17 @@ body {
   gap: var(--space-xxs);
 }
 
+.footer__link {
+  text-decoration: none;
+  color: var(--white);
+  text-align: center;
+  font-family: var(--family-font-family-text);
+  font-size: var(--font-utility-m);
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-line-height-utility-s); /* 116.667% */
+}
+
 .footer::before {
   content: "";
   position: absolute;
@@ -443,6 +461,7 @@ body {
   height: 208%;
   background-image: url("./assets/ocean.webp");
   background-position: center;
+  z-index: -2;
 }
 
 .dropdown {
@@ -531,4 +550,10 @@ body {
 
 .menu-btn--close div:last-child {
   transform: rotate(-45deg);
+}
+
+@media (hover: hover) {
+  .footer__link:hover {
+    text-decoration: underline;
+  }
 }
