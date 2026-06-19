@@ -143,7 +143,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 104%;
+  height: 105%;
   z-index: -1;
 
   background-image:
@@ -181,6 +181,7 @@ body {
   font-weight: var(--font-weight-bold);
   line-height: normal;
 }
+
 .hero {
   background: linear-gradient(
     180deg,
@@ -266,6 +267,12 @@ body {
   font-weight: var(--font-weight-regular);
   line-height: normal;
   z-index: 25;
+}
+
+.hero__seagull {
+  position: absolute;
+  top: 34%;
+  right: 24.6%;
 }
 
 .hero__img {
@@ -588,6 +595,14 @@ body {
     flex-direction: row;
     padding: var(--space-xl) var(--space-xxl);
     justify-content: space-between;
+
+    .footer__link-container {
+      order: 2;
+    }
+
+    .author {
+      order: 1;
+    }
   }
 }
 
