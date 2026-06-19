@@ -94,6 +94,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+}
 body {
   font-family: var(--family-font-family-text), Arial;
   font-weight: var(--font-weight-regular);
