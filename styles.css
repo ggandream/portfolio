@@ -300,7 +300,7 @@ body {
   font-style: normal;
   font-weight: var(--font-weight-regular);
   line-height: normal;
-  z-index: 20;
+  z-index: 5;
 }
 
 .hero__subtitle {
@@ -317,7 +317,7 @@ body {
   font-style: normal;
   font-weight: var(--font-weight-regular);
   line-height: normal;
-  z-index: 25;
+  z-index: 6;
 }
 
 .seagull {
