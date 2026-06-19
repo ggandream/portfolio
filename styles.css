@@ -305,7 +305,7 @@ body {
 }
 
 .hero__subtitle {
-  margin: 6px;
+  margin: 6px 0px;
   position: absolute;
   top: 50%;
   left: 50%;
