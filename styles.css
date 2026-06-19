@@ -3,6 +3,8 @@
   src: url("./fonts/FredrerickatheGreat/FrederickatheGreat-Regular.ttf")
     format("truetype");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -674,12 +676,6 @@ body {
     gap: var(--space-xl);
     height: 150%;
 
-    .title__contact {
-      font-size: var(--font-display-l);
-      text-align: center;
-      margin-top: 15%;
-    }
-
     .card__btn {
       flex-direction: row;
       justify-content: center;
@@ -690,6 +686,8 @@ body {
     .title__contact {
       font-size: var(--space-xxxl);
       width: 50%;
+      text-align: center;
+      margin-top: 15%;
     }
 
     .text {
@@ -822,7 +820,7 @@ body {
   left: 0;
   right: 0;
   height: 475%;
-  background-image: url("./assets/ocean2.webp");
+  background-image: url("./assets/ocean.webp");
   background-position: center;
   background-size: 280%;
   z-index: -2;
@@ -866,14 +864,7 @@ body {
 .nav__link {
   text-decoration: none;
   color: var(--title-color);
-  font-size: var(--family-font-family-header);
-  font-weight: var(--font-weight-bold);
-}
-
-.nav-btn {
-  text-decoration: none;
-  color: var(--title-color);
-  font-size: var(--family-font-family-header);
+  font-size: var(--font-utility-s);
   font-weight: var(--font-weight-bold);
 }
 

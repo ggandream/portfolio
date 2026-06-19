@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrea Garrido | Frontend Engineer</title>
     <link href="styles.css" rel="stylesheet" />
+    <script src="./app.js" defer></script>
   </head>
   <body>
-    <script src="./app.js" defer></script>
     <header class="header">
       <nav class="navigation" aria-label="Main Menu">
         <ul class="navigation__list">
@@ -45,7 +45,7 @@
           type="button"
           aria-label="Menu button"
           aria-controls="dropdown"
-          aria-hidden="false"
+          aria-expanded="false"
         >
           <div></div>
           <div></div>
@@ -86,7 +86,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="top">
         <img
           class="seagull seagull--hero-right-1"
           src="assets/seagull-hero-1.svg"
@@ -221,14 +221,14 @@
                   href="https://ggandream.github.io/calculator-app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Visit<img src="./assets/arrow-right.svg" />
+                  >Visit<img src="./assets/arrow-right.svg" alt="" />
                 </a>
                 <a
                   class="btn btn--secondary"
                   href="https://github.com/ggandream/calculator-app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Code<img src="./assets/github.svg"
+                  >Code<img src="./assets/github.svg" alt=""
                 /></a>
               </div>
             </div>
@@ -244,7 +244,7 @@
               <img
                 src="./assets/product-cart-with-list.webp"
                 loading="lazy"
-                alt="Three iPhone phones showing the calculator app in its three different themes."
+                alt="An iPhone showing the Product list with cart app in it's mobile version."
               />
             </picture>
             <div class="card__content">
@@ -268,14 +268,14 @@
                   href="https://ggandream.github.io/product-list-with-cart-main/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Visit<img src="./assets/arrow-right.svg" />
+                  >Visit<img src="./assets/arrow-right.svg" alt="" />
                 </a>
                 <a
                   class="btn btn--secondary"
                   href="https://github.com/ggandream/product-list-with-cart-main"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Code<img src="./assets/github.svg"
+                  >Code<img src="./assets/github.svg" alt=""
                 /></a>
               </div>
             </div>
@@ -303,7 +303,7 @@
           <img
             class="about__image"
             src="./assets/profile.webp"
-            alt="Andre Garrido"
+            alt="A profile picture of Andrea Garrido"
             loading="lazy"
           />
           <h3 class="title">Andrea Garrido</h3>
@@ -339,7 +339,6 @@
               href="https://www.linkedin.com/in/garridoandreag/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
               >LinkedIn
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -360,7 +359,6 @@
                   <path
                     d="M8 8V8.01"
                     stroke="currentColor"
-                    d
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -398,7 +396,6 @@
               href="https://github.com/ggandream"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Github"
               >GitHub
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -429,8 +426,9 @@
     </main>
     <footer class="footer">
       <div class="footer__link-container">
-        <a href="#" aria-label="Back to top" class="footer__link">Back to top</a
-        ><a href="#"
+        <a href="#top" aria-label="Back to top" class="footer__link"
+          >Back to top</a
+        ><a href="#top" aria-hidden="true"
           ><img
             class="footer__link-icon"
             src="./assets/arrow.svg"
