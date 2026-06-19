@@ -139,12 +139,12 @@
           <!-- CALCULATOR APP -->
           <article class="card">
             <img
-              class="card__img"
+              class="card__img card__img--reverse"
               src="./assets/calculator-app.webp"
               loading="lazy"
               alt="Three iPhone phones showing the calculator app in its three different themes."
             />
-            <div class="card__content">
+            <div class="card__content card__content--reverse">
               <div class="card__header">
                 <h3 class="card__title">Calculator App</h3>
                 <div class="card__tags">
@@ -180,12 +180,17 @@
 
           <!-- PRODUCT LIST WITH CARD -->
           <article class="card">
-            <img
-              class="card__img"
-              src="./assets/product-cart-with-list.webp"
-              loading="lazy"
-              alt="Three iPhone phones showing the calculator app in its three different themes."
-            />
+            <picture class="card__img">
+              <source
+                srcset="./assets/producto-list-with-cart.webp"
+                media="(min-width: 1440px)"
+              />
+              <img
+                src="./assets/product-cart-with-list.webp"
+                loading="lazy"
+                alt="Three iPhone phones showing the calculator app in its three different themes."
+              />
+            </picture>
             <div class="card__content">
               <div class="card__header">
                 <h3 class="card__title">Product List with Cart</h3>
@@ -222,10 +227,13 @@
         </section>
         <section class="about" id="about">
           <h2 class="title__about">
-            The Mind Behind the <span class="title__about--accent">code.</span>
+            The Mind Behind the
+            <span class="title__about--accent">code.</span>
           </h2>
+
           <img
-            src="./assets/profile-mobile.png"
+            class="about__image"
+            src="./assets/profile.webp"
             alt="Andre Garrido"
             loading="lazy"
           />
