@@ -406,6 +406,9 @@ body {
     .card__img {
       order: 2;
       width: 34.37%;
+      img {
+        width: 100%;
+      }
     }
 
     .card__content--reverse {
