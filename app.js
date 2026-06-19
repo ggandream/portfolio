@@ -14,7 +14,7 @@ $menuBtn.addEventListener("click", () => {
 
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".menu-btn")) {
-    $dropdown.classList.add("expanded");
+    $dropdown.classList.add("hidden");
     $menuBtn.classList.remove("menu-btn--close");
 
     $menuBtn.setAttribute("aria-expanded", String(true));
