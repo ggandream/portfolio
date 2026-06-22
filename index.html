@@ -87,44 +87,47 @@
     </header>
     <main class="main">
       <section class="hero" id="top">
-        <img
-          class="seagull seagull--hero-right-1"
-          src="assets/seagull-hero-1.svg"
-          alt=""
-        />
-        <img
-          class="seagull seagull--hero-right-2"
-          src="assets/seagull-hero-2.svg"
-          alt=""
-        />
-        <img
-          class="seagull seagull--hero-left-1"
-          src="assets/seagull-hero-3.svg"
-          alt=""
-        />
-        <img
-          class="seagull seagull--hero-left-2"
-          src="assets/seagull-hero-5.svg"
-          alt=""
-        />
-        <img
-          class="seagull seagull--hero-left-2-mobile"
-          src="assets/seagull-hero-5.svg"
-          alt=""
-        />
-        <img
-          class="seagull seagull--hero-right-2-mobile"
-          src="assets/seagull-hero-5.svg"
-          alt=""
-        />
-        <img
-          class="seagull seagull--hero-left-3"
-          src="assets/seagull-hero-4.svg"
-          alt=""
-        />
-
-        <h1 class="hero__title">Andrea</h1>
-        <h2 class="hero__subtitle">FRONTEND ENGINEER</h2>
+        <div class="hero__container">
+          <img
+            class="seagull seagull--hero-right-1"
+            src="assets/seagull-hero-1.svg"
+            alt=""
+          />
+          <img
+            class="seagull seagull--hero-right-2"
+            src="assets/seagull-hero-2.svg"
+            alt=""
+          />
+          <img
+            class="seagull seagull--hero-left-1"
+            src="assets/seagull-hero-3.svg"
+            alt=""
+          />
+          <img
+            class="seagull seagull--hero-left-2"
+            src="assets/seagull-hero-5.svg"
+            alt=""
+          />
+          <img
+            class="seagull seagull--hero-left-2-mobile"
+            src="assets/seagull-hero-5.svg"
+            alt=""
+          />
+          <img
+            class="seagull seagull--hero-right-2-mobile"
+            src="assets/seagull-hero-5.svg"
+            alt=""
+          />
+          <img
+            class="seagull seagull--hero-left-3"
+            src="assets/seagull-hero-4.svg"
+            alt=""
+          />
+          <div class="hero__titles">
+            <h1 class="hero__title">Andrea</h1>
+            <h2 class="hero__subtitle">FRONTEND ENGINEER</h2>
+          </div>
+        </div>
         <img class="hero__img" src="./assets/clouds.webp" alt="" />
       </section>
       <div class="content">
@@ -425,18 +428,23 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="footer__link-container">
-        <a href="#top" aria-label="Back to top" class="footer__link"
-          >Back to top</a
-        ><a href="#top" aria-hidden="true"
-          ><img
-            class="footer__link-icon"
-            src="./assets/arrow.svg"
-            aria-hidden="true"
-            loading="lazy"
-        /></a>
+      <div class="footer__info">
+        <div class="footer__link-container">
+          <a href="#top" aria-label="Back to top" class="footer__link"
+            >Back to top</a
+          ><a href="#top" aria-hidden="true"
+            ><img
+              class="footer__link-icon"
+              src="./assets/arrow.svg"
+              aria-hidden="true"
+              loading="lazy"
+          /></a>
+        </div>
+        <span class="author">&copy; 2026 ggandream</span>
       </div>
-      <span class="author">&copy; 2026 ggandream</span>
+      <div class="footer__ocean">
+        <img src="./assets/ocean.webp" alt="" class="ocean" />
+      </div>
     </footer>
   </body>
 </html>
