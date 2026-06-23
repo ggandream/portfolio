@@ -232,12 +232,16 @@ body {
 
   @media (min-width: 1440px) {
     .hero__img {
-      width: 100%;
       position: absolute;
-      top: 22%;
-      left: 0px;
+      bottom: 0;
       /* object-fit: contain;
       object-position: bottom center; */
+
+      width: 100%;
+      height: auto;
+      aspect-ratio: 233/65;
+      object-fit: cover;
+      /* object-position: center; */
     }
 
     .hero__container {
@@ -251,7 +255,6 @@ body {
     .hero__subtitle {
       font-size: var(--font-display-m);
       letter-spacing: 2px;
-      -webkit-text-stroke: 0.5px var(--text-color);
     }
 
     .seagull--hero-right-1 {
@@ -373,9 +376,13 @@ body {
 
 .hero__img {
   width: 355%;
+  height: auto;
+  aspect-ratio: 157/62;
+  object-fit: cover;
+
   position: absolute;
-  bottom: -300px;
-  left: -915px;
+  bottom: -2%;
+  right: -30%;
 }
 
 .projects {
