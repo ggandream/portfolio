@@ -149,7 +149,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 104%;
+  height: 106%;
   z-index: -1;
 
   background-image:
@@ -162,6 +162,20 @@ body {
 
   @media (min-width: 1440px) {
     height: 109%;
+  }
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  height: 108%;
+  opacity: 0.15; /* Figma opacity 15% */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  @media (min-width: 1024px) {
+    height: 112%;
   }
 }
 
@@ -212,7 +226,15 @@ body {
   overflow: hidden;
   position: relative;
 
-  @media (min-width: 500px) {
+  @media (orientation: landscape) and (max-height: 500px) {
+    .hero__img {
+      width: 100%;
+      bottom: -25%;
+      left: 0;
+    }
+  }
+
+  @media (orientation: portrait) and (min-width: 500px) {
     .hero__img {
       bottom: -30%;
     }
@@ -227,7 +249,7 @@ body {
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1300px) {
     .hero__img {
       position: absolute;
       bottom: -8%;
@@ -295,6 +317,15 @@ body {
       width: auto;
     }
   }
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.15; /* Figma opacity 15% */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .hero__titles {
@@ -393,7 +424,7 @@ body {
   align-items: center;
   gap: var(--space-xxl);
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     max-width: 1440px;
     padding: 80px var(--space-xxl) var(--space-xxxl) var(--space-xxl);
     gap: 82px;
@@ -512,6 +543,10 @@ body {
 
 .card__img {
   width: 90%;
+
+  img {
+    width: 100%;
+  }
 }
 
 .card__tags {
@@ -849,34 +884,22 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
+}
+
+.footer__ocean::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.15; /* Figma opacity 15% */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .ocean {
   width: 200%;
   height: auto;
 }
-
-/* .footer::before {
-  content: "";
-  position: absolute;
-  top: -200%;
-  left: 0;
-  right: 0;
-  height: 475%;
-  background-image: url("./assets/ocean.webp");
-  background-position: center;
-  background-size: 280%;
-  z-index: -2;
-
-  @media (min-width: 1440px) {
-    top: -226%;
-    left: 0;
-    right: 0;
-    height: 500%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-} */
 
 .dropdown {
   display: flex;
