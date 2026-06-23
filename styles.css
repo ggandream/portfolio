@@ -249,12 +249,12 @@ body {
     }
 
     .hero__title {
-      font-size: var(--space-4xl);
+      font-size: clamp(60px, calc(33.665px + 6.551vw), 128px);
     }
 
     .hero__subtitle {
-      font-size: var(--font-display-m);
-      letter-spacing: 2px;
+      width: clamp(200px, calc(114.798px + 21.195vw), 420px);
+      /* letter-spacing: 2px; */
     }
 
     .seagull--hero-right-1 {
@@ -311,7 +311,7 @@ body {
   margin: 0;
   color: var(--white); /*rgba(253, 248, 234, 0.8); */
   font-family: var(--family-font-family-header);
-  font-size: var(--font-display-xl);
+  font-size: clamp(60px, calc(33.665px + 6.551vw), 128px);
   font-style: normal;
   font-weight: var(--font-weight-regular);
   line-height: normal;
@@ -319,14 +319,15 @@ body {
 
 .hero__subtitle {
   margin: 0px;
+  width: clamp(200px, calc(114.798px + 21.195vw), 420px);
 
-  color: var(--text-color);
+  /* color: var(--text-color);
   text-align: center;
   font-family: var(--family-font-family-text);
   font-size: var(--font-utility-m);
   font-style: normal;
   font-weight: var(--font-weight-regular);
-  line-height: normal;
+  line-height: normal; */
 }
 
 .seagull {
