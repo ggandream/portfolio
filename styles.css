@@ -116,7 +116,7 @@ body {
   z-index: 10;
 
   @media (min-width: 1440px) {
-    max-width: 1920px;
+    max-width: 1440px;
 
     .navigation {
       display: flex;
@@ -210,37 +210,23 @@ body {
   height: 100vh;
   height: 100dvh;
   overflow: hidden;
-  position: relative;
 
-  @media (min-width: 500px) {
-    .hero__img {
-      width: 100%;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .hero__img {
-      width: 100%;
-      position: absolute;
-      bottom: -90px;
-      left: 0px;
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 
   @media (min-width: 1440px) {
     .hero__img {
+      margin-top: 0;
       width: 100%;
-      position: absolute;
-      top: 22%;
-      left: 0px;
-      /* object-fit: contain;
-      object-position: bottom center; */
+      height: auto;
+      aspect-ratio: 233/65;
+      object-fit: contain;
+      object-position: center;
     }
 
-    .hero__container {
+    .hero__titles {
       max-width: 1440px;
     }
 
@@ -250,8 +236,7 @@ body {
 
     .hero__subtitle {
       font-size: var(--font-display-m);
-      letter-spacing: 2px;
-      -webkit-text-stroke: 0.5px var(--text-color);
+      letter-spacing: 0.85px;
     }
 
     .seagull--hero-right-1 {
@@ -297,16 +282,17 @@ body {
 }
 
 .hero__titles {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 5;
 }
 
 .hero__title {
   margin: 0;
-  color: var(--white); /*rgba(253, 248, 234, 0.8); */
+  color: var(--white);
   font-family: var(--family-font-family-header);
   font-size: var(--font-display-xl);
   font-style: normal;
@@ -315,8 +301,7 @@ body {
 }
 
 .hero__subtitle {
-  margin: 0px;
-
+  margin: 0;
   color: var(--text-color);
   text-align: center;
   font-family: var(--family-font-family-text);
@@ -324,6 +309,14 @@ body {
   font-style: normal;
   font-weight: var(--font-weight-regular);
   line-height: normal;
+}
+
+.hero__img {
+  width: 250%;
+  height: auto;
+  aspect-ratio: 157/62;
+  object-fit: cover;
+  align-self: flex-end;
 }
 
 .seagull {
@@ -369,13 +362,6 @@ body {
 .seagull--hero-left-3 {
   top: 40%;
   left: 14%;
-}
-
-.hero__img {
-  width: 355%;
-  position: absolute;
-  bottom: -300px;
-  left: -915px;
 }
 
 .projects {
