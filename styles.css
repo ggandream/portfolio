@@ -214,32 +214,30 @@ body {
 
   @media (min-width: 500px) {
     .hero__img {
-      width: 100%;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
+      bottom: -30%;
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     .hero__img {
       width: 100%;
-      position: absolute;
-      bottom: -90px;
-      left: 0px;
+      bottom: 0;
+      left: 0;
+      aspect-ratio: 233/65;
     }
   }
 
   @media (min-width: 1440px) {
     .hero__img {
       position: absolute;
-      bottom: 0;
+      bottom: -8%;
+      left: 0;
       /* object-fit: contain;
       object-position: bottom center; */
 
       width: 100%;
       height: auto;
-      aspect-ratio: 233/65;
+      aspect-ratio: 233/66;
       object-fit: cover;
       /* object-position: center; */
     }
@@ -315,6 +313,7 @@ body {
   font-style: normal;
   font-weight: var(--font-weight-regular);
   line-height: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero__subtitle {
@@ -382,7 +381,7 @@ body {
   object-fit: cover;
 
   position: absolute;
-  bottom: -2%;
+  bottom: -10%;
   right: -30%;
 }
 
