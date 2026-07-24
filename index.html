@@ -7,6 +7,7 @@
     <title>Andrea Garrido | Frontend Engineer</title>
     <link href="styles.css" rel="stylesheet" />
     <script src="./app.js" defer></script>
+    <script src="assets/unicornStudio.umd.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -88,6 +89,7 @@
     </header>
     <main class="main">
       <section class="hero" id="top">
+        <div class="hero__unicorn" id="hero-unicorn" aria-hidden="true"></div>
         <div class="hero__container">
           <img
             class="seagull seagull--hero-right-1"
@@ -136,7 +138,6 @@
             </div>
           </div>
         </div>
-        <img class="hero__img" src="./assets/clouds.webp" alt="" />
       </section>
       <div class="content">
         <section class="projects" id="projects">
@@ -474,5 +475,21 @@
         <img src="./assets/ocean.webp" alt="" class="ocean" loading="lazy" />
       </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.UnicornStudio &&
+          UnicornStudio.addScene({
+            elementId: "hero-unicorn",
+            filePath: "assets/hero-unicorn.json",
+            fps: 60,
+            scale: 1,
+            dpi: 1.5,
+            lazyLoad: false,
+          }).catch(function (err) {
+            console.error("UnicornStudio no pudo cargar la escena:", err);
+          });
+      });
+    </script>
   </body>
 </html>
