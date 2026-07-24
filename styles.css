@@ -215,6 +215,7 @@ body {
 }
 
 .hero {
+  /* Gradiente de fallback por si Unicorn no carga */
   background: linear-gradient(
     180deg,
     var(--accent-color, #4a81b9) 0%,
@@ -319,6 +320,19 @@ body {
       width: auto;
     }
   }
+}
+
+.hero__unicorn {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero__unicorn canvas {
+  display: block;
 }
 
 .hero::after {
