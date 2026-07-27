@@ -1035,6 +1035,10 @@ body {
     color: var(--accent-color);
   }
 
+  .btn--primary:hover {
+    color: var(--accent-color);
+  }
+
   .hero__img:hover {
     transform: scale(1.1);
   }
